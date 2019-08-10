@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import amelie from "./amelie.jpg";
+import fifty from "./50_50.jpg";
 import nemo from "./nemo.jpg";
 import takeball from "./takeball.jpg";
 import toystory from "./toystory.jpeg";
@@ -13,7 +13,7 @@ function App() {
       {/* <h1>Welcome to Kodflix</h1> */}
       <div className="container">
         <div className="item">
-          <img src={amelie} alt="amelie poster" />
+          <img src={fifty} alt="50/50 poster" />
         </div>
         <div className="item">
           <img src={nemo} alt="finding nemo poster" />
@@ -34,12 +34,12 @@ function App() {
         </div>
       </div>
 
-      <div className="wraper">
+      <div className="wrapper">
         <div className="element">Amelie</div>
         <div className="element">Finding Nemo</div>
         <div className="element">Take The Ball Pass The Ball</div>
       </div>
-      <div className="wraper">
+      <div className="wrapper">
         <div className="element">Toy Story 4</div>
         <div className="element">Todo Sobre Mi Madre</div>
         <div className="element">Hable Con Ella</div>

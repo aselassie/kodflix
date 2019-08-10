@@ -13,7 +13,7 @@
 }
 
 
-.wraper {
+.wrapper {
   display: flex;
   margin: 30px; 
 }
@@ -24,5 +24,12 @@
 
 img {
   max-width: 100%;
+  border-radius: 4%;
 }
 
+@media (max-width: 600px){
+  .container {
+    /* display: block; */
+    flex-direction: column;
+  }
+}
