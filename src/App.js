@@ -1,4 +1,5 @@
 import React from "react";
+import Stack from './Stack';
 import "./App.css";
 import fifty from "./50_50.jpg";
 import nemo from "./nemo.jpg";
@@ -10,39 +11,20 @@ import talk from "./hable_con_ella.jpg";
 function App() {
   return (
     <div className="App">
-      {/* <h1>Welcome to Kodflix</h1> */}
       <div className="container">
-        <div className="item">
-          <img src={fifty} alt="50/50 poster" />
-          <div className="element" id='first'>50/50</div>
-        </div>
-        <div className="item">
-          <img src={nemo} alt="finding nemo poster" />
-          <div className="element" id="second">Finding Nemo</div> 
-        </div>
-        <div className="item">
-          <img src={takeball} alt="take the ball poster" />
-          <div className="element" id="third">Take The Ball Pass The Ball</div>
-        </div>
+        <Stack name="50/50" logo={fifty} />
+        <Stack name="Finding Nemo" logo={nemo} />
+        <Stack name="Take The Ball Pass The Ball" logo={takeball} /> 
       </div>
       <div className="container">
-        <div className="item">
-          <img src={toystory} alt="toy story poster" />
-          <div className="element" id="fourth">Toy Story 4</div>
-        </div>
-        <div className="item">
-          <img src={tsmm} alt="all about poster" />
-          <div className="element" id="fifth">Todo Sobre Mi Madre</div>
-        </div>
-        <div className="item">
-          <img src={talk} alt="talk to her poster" />
-          <div className="element" id="sixth">Hable Con Ella</div>
-        </div>
+        <Stack name="Toy Story 4" logo={toystory} />
+        <Stack name="Todo Sobre Mi Madre" logo={tsmm} />
+        <Stack name="Hable Con Ella" logo={talk} />
       </div>
-
-      
     </div>
   );
 }
+
+
 
 export default App;
