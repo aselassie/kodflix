@@ -1,26 +1,22 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Gallaries from "./Gallaries";
-import Stack from "./Stack";
-import fifty from "./50_50.jpg";
-import nemo from "./nemo.jpg";
-import takeball from "./takeball.jpg";
-import toystory from "./toystory.jpeg";
-import tsmm from "./tsmm.jpg";
-import talk from "./hable_con_ella.jpg";
+import Details from "./Details";
 
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <br />
-        <Gallaries />
-      </div>
+      <Router>
+        <div className="App">
+          <Route exact path='/' component={Gallaries}/>
+          <Route exact path='/details' component={Details}/>
+        </div>
+      </Router>
     );
   }
 }
-
 
 
 export default App;
