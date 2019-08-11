@@ -5,11 +5,15 @@
 }
 
 .container {
-    display: flex;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     
   }
 .item{
-  flex: 1;
+  /* flex: 1;
+  flex-basis: 120px; */
   padding: 5px;
   position: relative;
 }
@@ -49,9 +53,9 @@ img {
   border-radius: 4%;
 }
 
-@media (max-width: 600px){
+/* @media (max-width: 600px){
   .container {
     /* display: block; */
-    flex-direction: column;
+    /* flex-direction: column;
   }
-}
+} */ 

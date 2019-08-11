@@ -11,14 +11,12 @@ export default function Gallaries() {
     return (
       <div>
         <div className="container">
-          <Stack name="50/50" logo={fifty} />
-          <Stack name="Finding Nemo" logo={nemo} />
-          <Stack name="Take The Ball Pass The Ball" logo={takeball} />
-        </div>
-        <div className="container">
-          <Stack name="Toy Story 4" logo={toystory} />
-          <Stack name="Todo Sobre Mi Madre" logo={tsmm} />
-          <Stack name="Hable Con Ella" logo={talk} />
+          <Stack id='5050' name="50/50" logo={fifty} />
+          <Stack id='findingnemo' name="Finding Nemo" logo={nemo} />
+          <Stack id='taketheball' name="Take The Ball Pass The Ball" logo={takeball} />
+          <Stack id='toystory4' name="Toy Story 4" logo={toystory} />
+          <Stack id='todosobre' name="Todo Sobre Mi Madre" logo={tsmm} />
+          <Stack id='hablecon' name="Hable Con Ella" logo={talk} />
         </div>
       </div>
     );
