@@ -6,20 +6,56 @@
 
 .container {
     display: flex;
+    
   }
 .item{
   flex: 1;
   padding: 5px;
+  position: relative;
 }
 
-
-.wrapper {
-  display: flex;
-  margin: 30px; 
-}
 .element{
   flex: 1;
   font-size: 20px;
+}
+
+/* put title on image */
+#first, #second, #third, #fourth, #fifth, #sixth {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  /* width: 100; */
+  text-align: center;
+  background: pink;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* make title visible on image on hover */
+.item:hover #first{
+  visibility: visible;
+  opacity: 1;
+}
+.item:hover #second{
+  visibility: visible;
+  opacity: 1;
+}
+.item:hover #third{
+  visibility: visible;
+  opacity: 1;
+}
+.item:hover #fourth{
+  visibility: visible;
+  opacity: 1;
+}
+.item:hover #fifth{
+  visibility: visible;
+  opacity: 1;
+}
+.item:hover #sixth{
+  visibility: visible;
+  opacity: 1;
 }
 
 img {
