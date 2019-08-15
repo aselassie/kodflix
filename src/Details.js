@@ -1,38 +1,31 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import getGalleries from "./galleries-get";
 
 export default class Details extends Component {
 
-    constructor(){
-        super();
-        this.state = {
-            welcomeMessage: 'Welcome to the details page - WIP:'
-        }
-    }
+  constructor() {
+    super();
+    this.state = {
+      gallery: {}
+    };
+  }
 
-    componentDidMount(){
-        setTimeout(()=>{
-            this.setState({
-                welcomeMessage: 'The best is yet to come!'
-            });
-        }, 3000);
-    }
-    render(){
-        return(
-            <div>
-                <h1>{this.state.welcomeMessage}</h1>
-                <Link to='/'>Back to home page</Link>
-            </div>
-        );
-    }
+  componentDidMount() {
+    let galleryId = this.props.match.params.galleryId;
+    let gallery = getGalleries()
+        .find((gallery) => gallery.id === galleryId);
+    this.setState({
+      gallery: gallery
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.gallery.name}</h1>
+        <Link to="/">Back to home page</Link>
+      </div>
+    );
+  }
 }
-
-// export default function Details(){
-//     return (
-//       <div>
-//           <h1>Welcome to the details page - WIP: </h1>
-//           <Link to='/'>Back to home page</Link>
-//       </div>
-//     )
-//   }

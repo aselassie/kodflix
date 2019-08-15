@@ -3,7 +3,7 @@ import Stack from './Stack';
 import getGalleries from './galleries-get';
 
 
-export default function Gallaries() {
+export default function Galleries() {
     return (
       <div>
         <div className="container">
@@ -20,5 +20,3 @@ export default function Gallaries() {
       </div>
     );
   }
-
-  
